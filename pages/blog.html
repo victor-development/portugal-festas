@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Portugal Festas - Dicas, ideias e inspiração para planejar festas incríveis em Portugal.">
+    <meta name="keywords" content="blog, festas, dicas, ideias, Portugal">
+    <title>Blog • Portugal Festas</title>
+    <link rel="canonical" href="https://portugalmeudominio.com/pages/blog.html">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, #FFC107 0%, #FF9800 100%);
+            padding: 4rem 1rem;
+            text-align: center;
+            color: white;
+        }
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .blog-section {
+            padding: 3rem 1rem;
+        }
+        .blog-filters {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            background-color: #F5F5F5;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .filter-btn.active {
+            background-color: #FFC107;
+            color: white;
+        }
+        .blog-article {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .blog-article:hover {
+            transform: translateY(-5px);
+        }
+        .blog-article img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .blog-article-content {
+            padding: 1.5rem;
+        }
+        .blog-article-category {
+            color: #FFC107;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .blog-article h3 {
+            margin-bottom: 1rem;
+            color: #000;
+        }
+        .blog-article-date {
+            color: #757575;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <img src="../images/logo.svg" alt="Portugal Festas" class="logo">
+                    <span class="brand-name">Portugal Festas</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="fornecedor.html">Seja um Fornecedor</a></li>
+                    <li><a href="como-funciona.html">Como Funciona</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="sobre-nos.html">Sobre nós</a></li>
+                    <li><a href="#login" class="btn-entrar">Entrar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <h1>BLOG</h1>
+            <p>Dicas, ideias e inspiração para sua festa perfeita</p>
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="blog-section">
+        <div class="container">
+            <!-- FILTERS -->
+            <div class="blog-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="infantil">Festas Infantis</button>
+                <button class="filter-btn" data-filter="casamento">Casamentos</button>
+                <button class="filter-btn" data-filter="dicas">Dicas</button>
+                <button class="filter-btn" data-filter="fornecedores">Fornecedores</button>
+            </div>
+
+            <!-- BLOG GRID -->
+            <div class="blog-grid">
+                <article class="blog-article" data-category="infantil">
+                    <img src="../images/blog-1.jpg" alt="Festa de 3 anos">
+                    <div class="blog-article-content">
+                        <div class="blog-article-category">FESTAS INFANTIS</div>
+                        <h3>Minhas Escolhas de Fornecedores para a Festa de 3 anos</h3>
+                        <div class="blog-article-date">15 de Janeiro, 2025</div>
+                        <p>Esse ano o Massimo faz 3 anos — e o tema não podia combinar mais com ele: dinossauros! Descubra os fornecedores que escolhi para criar uma festa inesquecível.</p>
+                        <a href="../content/artigos-blog/artigo-1.html" class="link-more">Ler mais →</a>
+                    </div>
+                </article>
+
+                <article class="blog-article" data-category="dicas">
+                    <img src="../images/blog-2.jpg" alt="Espaços para festas">
+                    <div class="blog-article-content">
+                        <div class="blog-article-category">DICAS</div>
+                        <h3>Espaços para festas: Infantis, Chás e pequenas confraternizações</h3>
+                        <div class="blog-article-date">10 de Janeiro, 2025</div>
+                        <p>Encontrar o espaço ideal para celebrar em Portugal nem sempre é fácil. Confira nosso guia completo com os melhores espaços para diversos tipos de eventos.</p>
+                        <a href="../content/artigos-blog/artigo-2.html" class="link-more">Ler mais →</a>
+                    </div>
+                </article>
+
+                <article class="blog-article" data-category="infantil">
+                    <img src="../images/blog-3.jpg" alt="Gondolândia Porto">
+                    <div class="blog-article-content">
+                        <div class="blog-article-category">FESTAS INFANTIS</div>
+                        <h3>Festas infantis na Gondolândia (Porto): pacotes e condições</h3>
+                        <div class="blog-article-date">5 de Janeiro, 2025</div>
+                        <p>Se a ideia é uma festa sem stress e com crianças a brincar em segurança, a Gondolândia é uma excelente opção no Porto. Veja todos os detalhes.</p>
+                        <a href="../content/artigos-blog/artigo-3.html" class="link-more">Ler mais →</a>
+                    </div>
+                </article>
+
+                <article class="blog-article" data-category="dicas">
+                    <img src="../images/blog-1.jpg" alt="Planejamento de festas">
+                    <div class="blog-article-content">
+                        <div class="blog-article-category">DICAS</div>
+                        <h3>Checklist completo para organizar sua festa</h3>
+                        <div class="blog-article-date">1 de Janeiro, 2025</div>
+                        <p>Não deixe nada passar! Use nosso checklist completo para garantir que sua festa seja um sucesso do início ao fim.</p>
+                        <a href="#" class="link-more">Ler mais →</a>
+                    </div>
+                </article>
+
+                <article class="blog-article" data-category="fornecedores">
+                    <img src="../images/blog-2.jpg" alt="Melhores fotógrafos">
+                    <div class="blog-article-content">
+                        <div class="blog-article-category">FORNECEDORES</div>
+                        <h3>Os 10 melhores fotógrafos de eventos em Lisboa</h3>
+                        <div class="blog-article-date">28 de Dezembro, 2024</div>
+                        <p>Capture os melhores momentos da sua festa com estes fotógrafos profissionais altamente recomendados em Lisboa.</p>
+                        <a href="#" class="link-more">Ler mais →</a>
+                    </div>
+                </article>
+
+                <article class="blog-article" data-category="casamento">
+                    <img src="../images/blog-3.jpg" alt="Casamento Portugal">
+                    <div class="blog-article-content">
+                        <div class="blog-article-category">CASAMENTOS</div>
+                        <h3>Guia completo para planejar seu casamento em Portugal</h3>
+                        <div class="blog-article-date">20 de Dezembro, 2024</div>
+                        <p>De A a Z, tudo o que você precisa saber para organizar o casamento dos seus sonhos em Portugal.</p>
+                        <a href="#" class="link-more">Ler mais →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="sobre-nos.html">Sobre nós</a></li>
+                        <li><a href="como-funciona.html">Como Funciona</a></li>
+                        <li><a href="faq.html">Perguntas Frequentes</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#">Espaços</a></li>
+                        <li><a href="#">Comida e Bebida</a></li>
+                        <li><a href="#">Animação</a></li>
+                        <li><a href="#">Beleza e Moda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#">Restaurantes</a></li>
+                        <li><a href="#">Bolos</a></li>
+                        <li><a href="#">Transporte</a></li>
+                        <li><a href="#">Fotografia</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="termos.html">Termos e Condições</a></li>
+                        <li><a href="privacidade.html">Políticas de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Portugal Festas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

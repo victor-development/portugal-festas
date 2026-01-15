@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portugal Festas - Encontre serviços para festas e apoie pequenos empreendedores em Portugal.">
+    <meta name="keywords" content="festas, serviços, espaços, decoração, catering, Portugal">
+    <meta property="og:title" content="Portugal Festas - Encontre Serviços para Festas">
+    <meta property="og:description" content="Conecta famílias com fornecedores confiáveis de serviços para festas em Portugal.">
+    <meta property="og:type" content="website">
+    <title>Portugal Festas • Encontre Serviços para Festas</title>
+    <link rel="canonical" href="https://portugalmeudominio.com/">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <img src="images/logo.svg" alt="Portugal Festas" class="logo">
+                    <span class="brand-name">Portugal Festas</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="pages/fornecedor.html">Seja um Fornecedor</a></li>
+                    <li><a href="pages/como-funciona.html">Como Funciona</a></li>
+                    <li><a href="pages/blog.html">Blog</a></li>
+                    <li><a href="pages/sobre-nos.html">Sobre nós</a></li>
+                    <li><a href="#login" class="btn-entrar">Entrar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/hero.jpg') center/cover;">
+        <div class="container">
+            <h1>ENCONTRE SERVIÇOS PARA FESTAS</h1>
+            <p>Apoie Pequenos Empreendedores</p>
+            
+            <!-- SEARCH BAR -->
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="O que busca?" class="search-input">
+                <select id="categorySelect" class="category-select">
+                    <option value="">Categorias</option>
+                    <option value="espacos">Espaços</option>
+                    <option value="comida">Comida & Bebida</option>
+                    <option value="animacao">Animação</option>
+                    <option value="beleza">Beleza & Moda</option>
+                    <option value="fotografia">Fotografia</option>
+                    <option value="organizacao">Organização</option>
+                    <option value="bolos">Bolos</option>
+                    <option value="transporte">Transporte</option>
+                </select>
+                <button class="btn-search">Procurar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIAS CAROUSEL -->
+    <section class="categorias" id="categorias">
+        <div class="container">
+            <h2>CATEGORIAS DE SERVIÇOS PARA FESTAS</h2>
+            <div class="carousel" id="carousel">
+                <div class="carousel-item">
+                    <img src="images/categories/cat-1.jpg" alt="Fotografia e Filmagem">
+                    <h3>Fotografia e Filmagem</h3>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/categories/cat-2.jpg" alt="Segurança">
+                    <h3>Segurança & Staff</h3>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/categories/cat-3.jpg" alt="Animação">
+                    <h3>Animação</h3>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/categories/cat-4.jpg" alt="Beleza">
+                    <h3>Beleza & Moda</h3>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/categories/cat-5.jpg" alt="Bolos">
+                    <h3>Bolos</h3>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/categories/cat-6.jpg" alt="Espaços">
+                    <h3>Espaços</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="benefits">
+        <div class="container">
+            <h2>PLANEJE A FESTA DOS SEUS SONHOS</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">👥</div>
+                    <h3>Encontre fornecedores</h3>
+                    <p>Explore espaços, buffets, bolos, decoração e muito mais em todo Portugal.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⭐</div>
+                    <h3>Veja avaliações</h3>
+                    <p>Descubra o que outros clientes acharam dos serviços e faça escolhas seguras.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📋</div>
+                    <h3>Organize sem complicação</h3>
+                    <p>Solicite orçamentos, compare opções e planeje cada detalhe da sua festa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG DESTAQUE -->
+    <section class="blog-preview">
+        <div class="container">
+            <h2>DO NOSSO BLOG</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <img src="images/blog-1.jpg" alt="Artigo 1">
+                    <h3>Minhas Escolhas de Fornecedores para a Festa de 3 anos</h3>
+                    <p>Esse ano o Massimo faz 3 anos — e o tema não podia combinar mais com ele...</p>
+                    <a href="pages/blog.html" class="link-more">Ler mais →</a>
+                </article>
+                <article class="blog-card">
+                    <img src="images/blog-2.jpg" alt="Artigo 2">
+                    <h3>Espaços para festas: Infantis, Chás e pequenas confraternizações</h3>
+                    <p>Encontrar o espaço ideal pra celebrar em Portugal nem sempre é fácil...</p>
+                    <a href="pages/blog.html" class="link-more">Ler mais →</a>
+                </article>
+                <article class="blog-card">
+                    <img src="images/blog-3.jpg" alt="Artigo 3">
+                    <h3>Festas infantis na Gondolândia (Porto): pacotes e condições</h3>
+                    <p>Se a ideia é uma festa sem stress e com crianças a brincar em segurança...</p>
+                    <a href="pages/blog.html" class="link-more">Ler mais →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHAME PARA AÇÃO -->
+    <section class="cta-section" style="background: linear-gradient(135deg, #FFC107 0%, #FF9800 100%);">
+        <div class="container">
+            <h2>JUNTE-SE À NOSSA COMUNIDADE</h2>
+            <p>Ganhe uma renda extra e desbloqueie novas oportunidades anunciando seu negócio</p>
+            <a href="pages/fornecedor.html" class="btn-primary">Seja um Fornecedor</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="pages/sobre-nos.html">Sobre nós</a></li>
+                        <li><a href="pages/como-funciona.html">Como Funciona</a></li>
+                        <li><a href="pages/faq.html">Perguntas Frequentes</a></li>
+                        <li><a href="pages/contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#">Espaços</a></li>
+                        <li><a href="#">Comida e Bebida</a></li>
+                        <li><a href="#">Animação</a></li>
+                        <li><a href="#">Beleza e Moda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#">Restaurantes</a></li>
+                        <li><a href="#">Bolos</a></li>
+                        <li><a href="#">Transporte</a></li>
+                        <li><a href="#">Fotografia</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="pages/termos.html">Termos e Condições</a></li>
+                        <li><a href="pages/privacidade.html">Políticas de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Portugal Festas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
