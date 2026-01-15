@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entenda como funciona a plataforma Portugal Festas para clientes e fornecedores.">
+    <meta name="keywords" content="como funciona, tutorial, guia, Portugal Festas">
+    <title>Como Funciona • Portugal Festas</title>
+    <link rel="canonical" href="https://portugalmeudominio.com/pages/como-funciona.html">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, #FFC107 0%, #FF9800 100%);
+            padding: 4rem 1rem;
+            text-align: center;
+            color: white;
+        }
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .how-it-works {
+            padding: 3rem 1rem;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .tab-btn {
+            padding: 1rem 2rem;
+            background-color: #F5F5F5;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .tab-btn.active {
+            background-color: #FFC107;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .flow-steps {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .flow-step {
+            background-color: #F5F5F5;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            display: flex;
+            align-items: start;
+            gap: 1.5rem;
+        }
+        .flow-step-number {
+            background-color: #FFC107;
+            color: #000;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <img src="../images/logo.svg" alt="Portugal Festas" class="logo">
+                    <span class="brand-name">Portugal Festas</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="fornecedor.html">Seja um Fornecedor</a></li>
+                    <li><a href="como-funciona.html">Como Funciona</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="sobre-nos.html">Sobre nós</a></li>
+                    <li><a href="#login" class="btn-entrar">Entrar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <h1>COMO FUNCIONA</h1>
+            <p>Descubra como usar a plataforma Portugal Festas</p>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('clientes')">Para Clientes</button>
+                <button class="tab-btn" onclick="showTab('fornecedores')">Para Fornecedores</button>
+            </div>
+
+            <!-- CLIENTES TAB -->
+            <div id="clientes" class="tab-content active">
+                <h2 class="text-center mb-2">Como Encontrar Serviços para Sua Festa</h2>
+                <div class="flow-steps">
+                    <div class="flow-step">
+                        <div class="flow-step-number">1</div>
+                        <div>
+                            <h3>Busque o Serviço</h3>
+                            <p>Use nossa barra de busca ou navegue pelas categorias para encontrar o que precisa: espaços, buffets, fotógrafos, animação e muito mais.</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-step-number">2</div>
+                        <div>
+                            <h3>Compare Fornecedores</h3>
+                            <p>Veja perfis detalhados, fotos, preços e avaliações de outros clientes para fazer a melhor escolha.</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-step-number">3</div>
+                        <div>
+                            <h3>Solicite Orçamentos</h3>
+                            <p>Entre em contato diretamente com os fornecedores e solicite orçamentos personalizados para sua festa.</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-step-number">4</div>
+                        <div>
+                            <h3>Contrate e Avalie</h3>
+                            <p>Escolha o melhor fornecedor, contrate o serviço e depois compartilhe sua experiência com uma avaliação.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FORNECEDORES TAB -->
+            <div id="fornecedores" class="tab-content">
+                <h2 class="text-center mb-2">Como Oferecer Seus Serviços</h2>
+                <div class="flow-steps">
+                    <div class="flow-step">
+                        <div class="flow-step-number">1</div>
+                        <div>
+                            <h3>Crie Seu Perfil</h3>
+                            <p>Cadastre-se gratuitamente e crie um perfil profissional com informações sobre seus serviços, fotos e preços.</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-step-number">2</div>
+                        <div>
+                            <h3>Receba Solicitações</h3>
+                            <p>Clientes interessados em seus serviços entrarão em contato diretamente através da plataforma.</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-step-number">3</div>
+                        <div>
+                            <h3>Envie Orçamentos</h3>
+                            <p>Responda às solicitações com orçamentos personalizados e negocie diretamente com os clientes.</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-step-number">4</div>
+                        <div>
+                            <h3>Preste o Serviço</h3>
+                            <p>Feche o negócio, preste um excelente serviço e construa sua reputação com avaliações positivas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section" style="background: linear-gradient(135deg, #FFC107 0%, #FF9800 100%);">
+        <div class="container">
+            <h2>PRONTO PARA COMEÇAR?</h2>
+            <p>Encontre os melhores fornecedores para sua festa ou cadastre seu negócio</p>
+            <a href="../index.html" class="btn-primary">Começar Agora</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="sobre-nos.html">Sobre nós</a></li>
+                        <li><a href="como-funciona.html">Como Funciona</a></li>
+                        <li><a href="faq.html">Perguntas Frequentes</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#">Espaços</a></li>
+                        <li><a href="#">Comida e Bebida</a></li>
+                        <li><a href="#">Animação</a></li>
+                        <li><a href="#">Beleza e Moda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#">Restaurantes</a></li>
+                        <li><a href="#">Bolos</a></li>
+                        <li><a href="#">Transporte</a></li>
+                        <li><a href="#">Fotografia</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="termos.html">Termos e Condições</a></li>
+                        <li><a href="privacidade.html">Políticas de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Portugal Festas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

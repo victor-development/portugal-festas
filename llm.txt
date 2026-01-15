@@ -1,0 +1,52 @@
+# Portugal Festas - LLM Context File
+
+## About Portugal Festas
+Portugal Festas is a marketplace platform connecting families with trusted party service providers across Portugal. We support small local entrepreneurs and make party planning simple and accessible.
+
+## Main Services
+- Party Venues (Espaços para festas)
+- Food & Beverage (Comida e Bebida)
+- Entertainment (Animação)
+- Beauty & Fashion (Beleza e Moda)
+- Photography (Fotografia)
+- Organization Services (Organização)
+- Cakes (Bolos)
+- Transportation (Transporte)
+
+## Key Features
+- Search and discover party service providers
+- View ratings and reviews from real customers
+- Request quotes and compare options
+- Direct communication with providers
+- Become a provider and grow your business
+
+## Pages
+- Home: Main landing page with search, categories, benefits
+- Become a Provider: Information for service providers to join the platform
+- How It Works: Explains the platform for both clients and providers
+- Blog: Tips, ideas, and inspiration for party planning
+- About Us: Our story, mission, and values
+- Contact: Contact form and information
+- FAQ: Frequently asked questions
+- Terms & Conditions: Legal terms of use
+- Privacy Policy: Data protection and privacy information
+
+## Technology
+- Pure HTML5, CSS3, and vanilla JavaScript
+- No external frameworks or dependencies
+- Mobile-first responsive design
+- SEO optimized
+- Accessibility focused
+
+## Contact
+Email: contato@portugalfestas.pt
+Website: https://portugalmeudominio.com
+
+## Mission
+To connect Portuguese families with local small business owners, creating a community where everyone can grow together. We believe every party deserves to be special and every provider deserves recognition for their work.
+
+## Values
+- Trust: We verify all providers to ensure quality
+- Community: We support local small entrepreneurs
+- Transparency: Real and honest reviews
+- Simplicity: Making party planning easy and accessible

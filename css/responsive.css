@@ -1,0 +1,178 @@
+/* ===========================
+   PORTUGAL FESTAS - RESPONSIVE STYLES
+   Mobile-First Approach
+   =========================== */
+
+/* MOBILE STYLES (Base - already defined in style.css) */
+
+/* TABLET STYLES */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--color-white);
+        width: 100%;
+        text-align: center;
+        transition: left 0.3s ease;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: var(--spacing-md) 0;
+        gap: var(--spacing-sm);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        margin: var(--spacing-sm) 0;
+    }
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .search-input,
+    .category-select,
+    .btn-search {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    /* Categorias */
+    .carousel {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Benefits */
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Blog */
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* CTA */
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-section p {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE STYLES */
+@media screen and (max-width: 480px) {
+    /* Typography */
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Categorias */
+    .carousel {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel-item img {
+        height: 150px;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* CTA */
+    .cta-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* LARGE DESKTOP STYLES */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1.8rem;
+    }
+}
+
+/* PRINT STYLES */
+@media print {
+    .header,
+    .menu-toggle,
+    .search-bar,
+    .cta-section,
+    .footer {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        color: black;
+        background: white;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+/* ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* DARK MODE SUPPORT */
+@media (prefers-color-scheme: dark) {
+    /* Optional: Add dark mode styles if needed */
+    /* Currently not implemented as per requirements */
+}
